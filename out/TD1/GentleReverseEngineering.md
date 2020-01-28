@@ -1,4 +1,4 @@
-# Différences de résultat
+# Emily tuto
 
 ## file 
 
@@ -57,6 +57,8 @@ le programme nous retourne ensuite:
 Please input a word: bla
 That's correct!
 ```
+# Partie 2
 
+* Modifier un binaire peut permettre a l'attaquant de contourner les certifications et de créer une entrée pour prendre la main sur le code.
 
 
