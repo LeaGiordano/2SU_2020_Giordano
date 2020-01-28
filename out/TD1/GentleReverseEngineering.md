@@ -4,13 +4,13 @@
 
  * la différence est du au fait que dans l'exemple le file (commande qui permet de voir le type d'un fichier) est executé sur MacOS et nous l'executons sur linux on obtient donc :
 
-```
+```console
 program: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=deba4fa68dbc989053118b9c30b0abcf5f78df23, not stripped 
 ```
 
 * On peut ajouter l'option -no-pie lors de la compilation pour avoir un executable et pa un shared object, on obtient 
 
-``` 
+```console
 program: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=5249ded8e231e1b61b1292fc0d720b4a93a28bec, not stripped 
 ```
 
@@ -23,7 +23,7 @@ program: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked
 
 * strings permet d'afficher les caractères affichable contenue dans le fichier donné, on lui donne l'executable et on obtient:
 
-``` 
+```console 
 poop
 Please input a word:
 That's correct!
@@ -32,7 +32,7 @@ That's not correct!
 ## disassembling 
 
 * objdump permet d'afficher le code en assembleur de notre executable.
-```console
+```assembly
 0000000000400686 <is_valid> (Offset dans le fichier : 0x686):
 is_valid():
   400686:       55                      push   %rbp
@@ -53,7 +53,7 @@ is_valid():
 * Les 3 première ligne correspondent à la déclaration de la fonction, les deux suivantes au `strmcp`. 4006a5 :On fait le test et on retourne 1 ou 0 quand le test est vrai ou faux.
 afin que le programme retourne toujours vrai on va chercher la position du byte à changer pour qu'il passe toujours par return 1, on doit donc modifier b8 `00` le byte 00 en 01. Ici à la position 1713. 
 le programme nous retourne ensuite:
-```
+```condole
 Please input a word: bla
 That's correct!
 ```
