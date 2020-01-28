@@ -32,7 +32,7 @@ That's not correct!
 ## disassembling 
 
 * objdump permet d'afficher le code en assembleur de notre executable.
-```console
+```assembly
 0000000000400686 <is_valid> (Offset dans le fichier : 0x686):
 is_valid():
   400686:       55                      push   %rbp
