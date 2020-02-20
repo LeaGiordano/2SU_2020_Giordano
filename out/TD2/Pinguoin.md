@@ -9,7 +9,7 @@
 
   `binwalk -e -d 8 vmlinuz-qemu-arm-2.6.20`
 
-* on se place dans le dossier qui contient E7E0.
+* on se place dans le dossier qui contient E7E0. Et on cherche où se trouve l'image avec un exdump on retoruve l'offset.
 
 * on extrait le fichier tux.png grace à son offset:
 
