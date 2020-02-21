@@ -9,8 +9,17 @@
    
 * __A quoi sert la chaine de confiance? Pourquoi est-elle nécessaire?__
 
-
+   
 * __Décrire la méthode pour aborder la sécurité sur un produit embarqué. Pourquoi établir un modèle d'attaquant est-il important?__
+
+   
 * __Trouver un moyen rapide de faire du debug embarqué (par exemple sur cible ARM)? Expliquer les avantages__
+
+   
 * __Lister les catégories de bug possibles et comment les exploiter et les défendre__
+
+   Bufferoverflow avec une connection port JTAG puis fuzzer, analyseur de code , reverse...
+   
 * __Quelles idées pour améliorer la sécurité en embarqué? (IA, Anti-debug, Obfuscation, Crypto ...) Choisissez une idée, chercher si elle existe et développer en quelques phrases quel avantage elle apporte et ses limites___
+
+   
